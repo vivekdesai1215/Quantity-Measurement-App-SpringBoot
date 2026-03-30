@@ -2,6 +2,8 @@ package com.app.quantitymeasurement.service;
 
 import java.time.LocalDateTime;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -18,6 +20,8 @@ import java.util.*;
 
 @Service
 public class QuantityMeasurementService {
+	
+	private static Logger logger = LoggerFactory.getLogger(QuantityMeasurementService.class);
 	
 	@Autowired 
 	QuantityMeasurementRepository repo;
@@ -102,6 +106,7 @@ public class QuantityMeasurementService {
 	    );
 
 	    repo.save(entity);
+	    logger.info("Saved Entity to Database from Addition Arithmetic operation");
 	    return result;
 	}
 
@@ -147,6 +152,7 @@ public class QuantityMeasurementService {
 	    );
 
 	    repo.save(entity);
+	    logger.info("Saved Entity to Database from Subtraction Arithmetic operation");
 	    return result;
 	}
 
@@ -191,6 +197,7 @@ public class QuantityMeasurementService {
 	    );
 
 	    repo.save(entity);
+	    logger.info("Saved Entity to Database from Multiplication Arithmetic operation");
 	    return result;
 	}
 
@@ -238,6 +245,7 @@ public class QuantityMeasurementService {
     );
 
     repo.save(entity);
+    logger.info("Saved Entity to Database from Division Arithmetic operation");
     return result;
 }
 
@@ -291,6 +299,7 @@ public class QuantityMeasurementService {
     );
 
     repo.save(entity);
+    logger.info("Saved Entity to Database from Compare Operation");
     return result;
 }
 
@@ -324,6 +333,7 @@ public class QuantityMeasurementService {
     );
 
     repo.save(entity);
+    logger.info("Saved Entity to Database from Convert Operation");
     return result;
 }
 
