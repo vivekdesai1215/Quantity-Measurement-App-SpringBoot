@@ -1,26 +1,33 @@
-# Maven build
-/target/
-/.mvn/
-!.mvn/wrapper/maven-wrapper.jar
+HELP.md
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
 
-# Maven wrapper scripts (optional, keep if you want them)
-mvnw
-mvnw.cmd
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
 
-# Logs
-*.log
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
 
-# IDE files
-/.idea/
-/*.iml
-/.classpath
-/.project
-/.settings/
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
 
-# OS-specific
-.DS_Store
-Thumbs.db
-
-# Spring Boot specific
-/application.properties
-/application.yml
+### VS Code ###
+.vscode/
