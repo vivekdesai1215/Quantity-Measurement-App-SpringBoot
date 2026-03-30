@@ -1,0 +1,26 @@
+# Maven build
+/target/
+/.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Maven wrapper scripts (optional, keep if you want them)
+mvnw
+mvnw.cmd
+
+# Logs
+*.log
+
+# IDE files
+/.idea/
+/*.iml
+/.classpath
+/.project
+/.settings/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Spring Boot specific
+/application.properties
+/application.yml
